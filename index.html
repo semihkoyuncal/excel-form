@@ -16,6 +16,23 @@
             <p>Excel dosyasını (.xlsx veya .xls) yükleyin</p>
         </div>
 
+        <div id="messageArea"></div>
+
+        <div id="personSelector" class="person-selector">
+            <h3>Kişi Seçimi</h3>
+            <div class="selector-controls">
+                <select id="personSelect">
+                    <option value="">-- Kişi Seçin --</option>
+                </select>
+                <div id="personInfo" class="person-info"></div>
+            </div>
+            <div class="navigation-buttons">
+                <button type="button" class="btn btn-secondary" id="prevBtn" onclick="navigatePerson(-1)">← Önceki</button>
+                <button type="button" class="btn btn-secondary" id="nextBtn" onclick="navigatePerson(1)">Sonraki →</button>
+                <button type="button" class="btn btn-primary" onclick="exportCurrentPerson()">Dışa Aktar</button>
+            </div>
+        </div>
+
         <form id="dataForm">
             <div class="form-group">
                 <label for="name">Ad Soyad:</label>
@@ -38,6 +55,7 @@
             </div>
         </form>
     </div>
+    
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

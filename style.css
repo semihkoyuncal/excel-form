@@ -39,6 +39,85 @@ h1 {
     color: #666;
 }
 
+.person-selector {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+    display: none;
+}
+
+.person-selector h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+.selector-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.selector-controls select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    min-width: 250px;
+    background-color: white;
+}
+
+.person-info {
+    font-size: 14px;
+    color: #666;
+    background-color: #e3f2fd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 4px solid #1a73e8;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -66,4 +145,29 @@ input[readonly], textarea[readonly] {
 textarea {
     height: 100px;
     resize: vertical;
-} 
+}
+
+.message {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.message.info {
+    background-color: #cce7ff;
+    border: 1px solid #b3d9ff;
+    color: #004085;
+}
